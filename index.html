@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bikes</title>
+	<meta name="keywords" content="html,css,javaScript">
+	<meta name="description" content="Bikes">
+	<meta name="author" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Ubuntu:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+
+	<!-- Font-awesome 5 cdn -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- start here -->
+	<div class="container">
+		<header>
+			<nav class="navbar">
+				<div class="upMenu">
+					<div class="navbar-header">
+						<div id="logo">
+							<a class="navbar-brand" href="#">
+								<img src='img/logo.png' alt='logo bike'>
+							</a>
+						</div>
+					</div>
+					<div class="collapse navbar-collapse" id="navMenu">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#">Bikes</a></li>
+							<li><a href="#">Gear</a></li>
+							<li><a href="#">Parts</a></li>
+							<li><a href="#">Tyres</a></li>
+							<li><a href="#">Service-info</a></li>
+							<li><a href="#">Catalogues</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right" id='icons'>
+							<li><i class="fas fa-search"></i></li>
+							<li><i class="fas fa-shopping-bag"></i></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+			<hr>
+			<h1>Bikes</h1>
+			<hr>
+		</header>
+		<div class="clearfix"></div>
+		<div class="row main">
+			<div id='sidebar' class='col-md-3'>
+				<ul id="filters">
+					<li><h3><strong>Filter by</strong></h3></li>
+
+					<li data-filter="*" class='clicked'>Show all <span class="badge badge-all right"></span></li>
+					
+					<li><hr></li>
+					
+					<li><h3><strong>Gender</strong></h3></li>
+					
+					<li data-filter="male">Male <span class="badge badge-male"></span></li>
+					
+					<li data-filter="female">Female <span class="badge badge-female"></span></li>
+					
+					<li><hr></li>
+					
+					<li><h3><strong>Brand</strong></h3></li>
+				</ul>
+			</div>
+
+			<!-- Od tuka pocnuvaat kartickite -->
+			<div id="cards" class='col-md-8'>
+				<ul></ul>
+			</div>
+
+
+		</div>
+	</div>
+	<footer class='container footer'>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Social share</p>
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+			<div class="col-md-3">
+				<p>Event info</p>
+				<ul>
+					<li>Enter Now</li>
+					<li>Event Info</li>
+					<li>Course Maps</li>
+					<li>Race Pack</li>
+					<li>Results</li>
+					<li>FAQs</li>
+					<li>Am I Registered?</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<p>Registration</p>
+				<ul>
+					<li>Volunteers</li>
+					<li>Gallery</li>
+					<li>Press</li>
+					<li>Results</li>
+					<li>Privacy Policy</li>
+					<li>Service Plus</li>
+					<li>Contacts</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<p>Schedule</p>
+				<ul>
+					<li>Gallery</li>
+					<li>About</li>
+					<li>Videos</li>
+					<li>Results</li>
+					<li>FAQs</li>
+					<li>Results</li>
+					<li>Volunteers</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- This is commented, because we are using JSON from server, trough AJAX -->
+	<!-- <script src="js/products.js"></script> -->
+
+	<!-- Regular script file -->
+	<!-- <script src="js/main.js"></script> -->
+	
+	<!-- Use minified version -->
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
