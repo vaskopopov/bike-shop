@@ -9,7 +9,8 @@ $(function() {
     var countMale, countFemale, brandsPart, card="", uniqueBrands=[];
     //-----------------------------------------------------------------------
 
-    $.get('http://json-project3.herokuapp.com/products')
+    // $.get('http://json-project3.herokuapp.com/products')
+    $.getJSON('/js/products.json')
     .then(function(data){
 
         // console.log(products);
