@@ -12,6 +12,8 @@ $(function() {
     $.get('http://json-project3.herokuapp.com/products')
     .then(function(data){
 
+        // console.log(products);
+
         countMale = data.filter(function(v) {
             return v.gender == 'MALE'
         }).length;
