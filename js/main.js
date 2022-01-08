@@ -10,7 +10,7 @@ $(function() {
     //-----------------------------------------------------------------------
 
     // $.get('http://json-project3.herokuapp.com/products')
-    $.getJSON('/js/products.json')
+    $.getJSON('js/products.json')
     .then(function(data){
 
         // console.log(products);
